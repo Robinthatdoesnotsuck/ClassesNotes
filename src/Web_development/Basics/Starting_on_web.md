@@ -8,4 +8,6 @@ So knowing these three basic elements is essential to learn how to develop web a
 - HTML stands for hypertext markup language
   - This controls how content is arranged in a web page, manages the whole structure of the web page with elements in a tree like structure
 - CSS stands for cascading style sheets
+  - This controls how the content renders in the web page, adding styling to each element
 - Javascript(god forsaken thing) is the scripting language of the web
+  - This handles the behaviour of the elements in the page adding flow control and logicc to the web page.
