@@ -51,6 +51,8 @@ So knowing these three basic elements are essential to learn how to develop web 
 
 ## What do we do as engineers with this knowledge?
 
+*If you find the mistake in this section you get extra credit*
+
 Most of our work when we are involved in a web app we have three main tasks:
 
 - Maintaing the existing app
@@ -67,9 +69,39 @@ The computer as you should already know has an interface for processes called po
   
 | Port number | Port function |
 |-------------|---------------|
-|  80 | Handles the HTTP protocol ( Hypertext transfer protocol)|
+|  80 | Handles the HTTP data ( Hypertext transfer protocol) |
+| 443 | Handles secure http (Secure hypertext transfer protocol) |
+| 22  | Secure shell connection |
+| 530 | Remote procedure call |
 
 The computer opens this port to handle the intake of data from the web, but us as engineers have access to the programming interface that can manage this
 resource however we like and handle how it communicates, structures the data and the after logic needed for it to do what we want.
+But to do this we need to create something called a socket and the first part to handle ports is to invoke a way to create a datagram socket:
 
-The first part to handle ports is to invoke a datagram socket:
+* End of error section*
+
+- This is the type of socket needed to communicate two computers across a network
+- The syscall available to it is the socket(7) docs available on the [linux man-pages](https://man7.org/linux/man-pages/man7/socket.7.html)
+- If you see the syscall for socket() we se that we need three parameters
+
+```c,readonly
+  int socket (int family, int type, int protocol)
+
+```
+
+- First we establish the family of socket we have to use in this case AF_INET for ipv4 protocols cause we want to be able
+to communicate with the internet protocol
+- We have to specify the type of socket in our use case we will use a stream socket SOCK_STREAM that enables tcp communication
+
+The socket that is created following these instructions is the one most used to service common web apps, that means that a socket that it is:
+
+- From the ipv4 protocol family
+- It is a TCP type socket ( [there is another](https://www.youtube.com/watch?v=sLlu_RpElBs&pp=ygUQdGhlcmUgaXMgYW5vdGhlcg%3D%3D) type that we will look up more into the course)
+- Has a port assigned to it(in the usable range)
+- Has an Ip direction, since it is from the internet protocol family
+
+This is all done to let our puter transfer data to other puters
+
+## How does the network works(kinda)
+
+![Lain with a lot of puters](https://blog.jlist.com/wp-content/uploads/2020/01/lain-computers.gif)
