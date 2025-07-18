@@ -78,7 +78,7 @@ The computer opens this port to handle the intake of data from the web, but us a
 resource however we like and handle how it communicates, structures the data and the after logic needed for it to do what we want.
 But to do this we need to create something called a socket and the first part to handle ports is to invoke a way to create a datagram socket:
 
-* End of error section*
+*End of error section*
 
 - This is the type of socket needed to communicate two computers across a network
 - The syscall available to it is the socket(7) docs available on the [linux man-pages](https://man7.org/linux/man-pages/man7/socket.7.html)
@@ -102,6 +102,24 @@ The socket that is created following these instructions is the one most used to 
 
 This is all done to let our puter transfer data to other puters
 
-## How does the network works(kinda)
+## How does a network works(kinda)
 
 ![Lain with a lot of puters](https://blog.jlist.com/wp-content/uploads/2020/01/lain-computers.gif)
+
+The operating system leverages a lot of the fundamentals of networking using something called layers.
+These layers are configured as an stack of different software and hardware componets than in unison helps us in establishing a network
+connection.
+
+The puter transmits data through the network cable in chunks, this chunks are called packets that have two parts, a header and a payload:
+
+- The header contains metadata regarding the source host, the destination host and the protocol used for transfering the packet
+- The payload is the actual data you want to send, this can be a http request data, a photo or even HTML
+
+The operating system practically handles this kind of unraveling of the packet from the network so we as programmers can concentrate in
+only having any type of logic we need to use that data.
+
+But Why do we care about networking? cause well that is how we serve HTML content and web pages, it is data that gets transported through the network and only then our web browser can interpret it and render HTML pages.
+
+## Well and how does the browser uses this data to render a web page?
+
+That is a more complicated question and we will have to explain some compiler theory and data structures
