@@ -122,4 +122,30 @@ But Why do we care about networking? cause well that is how we serve HTML conten
 
 ## Well and how does the browser uses this data to render a web page?
 
-That is a more complicated question and we will have to explain some compiler theory and data structures
+That is a more complicated question and we will have to explain some compiler theory and data structures:
+
+We already explained that data in the network is served through packets, these packets are raw byte data and this raw data has to be
+interpreted by a program to be useful, in this case the web browser.
+
+The browser has something in its innards called a browser engine, the browser engine handles a process called painting the web page by creating a structure needed called the rendering tree, the how what and when it renders stuff is determined by the browser engine used by your web browser (this sometimes matters as some more advanced frameworks are kinda buggy with some engines).
+
+But the important thing is this entity called "The rendering tree" and this is the sum of the DOM tree and the CSSOM tree:
+
+But what is the DOM? some kind of weird kink or are they just magic words?
+
+Well we already know that what describes a web page it's a file with a .html termination, but I've already explained that the browser just reads raw bytes from the network and you might think "Are you telling me that the browser interprets raw byte data that looks like this 0x68732f6e into HTML text?" and the short answer is:
+
+![Jotaro saying yes](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F48d17d8943220852f4b5c90d73485fae%2Ftenor.gif%3Fitemid%3D17161748&f=1&nofb=1&ipt=72aaa6b8b1001dc5ff4e5d8b497e36d1dbd23aedd9f2d937b9d87d3148223fa9)
+
+The web engine first receives the raw bytes, then it transforms those bytes into characters (like ascii and stuff), then the browser takes these characters and it parses them into tokens -> The tokens and its meaning is determined by another data structure that matches the tokens with it's meaning so that the browser engine can interpret this so called source code into html tags with its attributes.
+After this tokenization the engine groups these tokens into something called nodes, the node is the grouping by properties related to an element, property and text within it and finaly the grouping of these nodes by relationship is what creates a DOM object.
+
+And This is done to render only the HTML that means the raw HTML file into a web browser.
+
+What about the other stuff like css and javascript, well it kinda does the same for CSS, it receives raw CSS bytes and does the same process to transform it into something called a CSSOM.
+
+![Bad dom diagram](./assets/Web%20Development-2.jpg)
+
+Now that we have both the CSSOM and the DOM the browser engine sums both tree like structures into one creating what we know as the *rendering tree*, the browser now has the information of what to render and in what style it has to be but first it determines the position of each element on the page itself while taking consideration on how we style it, the screen size, the canvas size, etc.
+
+This behaves a lot like a rendering pipeline (Almost the same if you ask me) so knowing the parallels between this and a graphics pipeline might help us in the future wink wink ;) ;)
