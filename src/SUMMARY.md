@@ -24,6 +24,8 @@
 # Distributed Systems
 
 - [Distributed Systems](./Distributed_Systems/First_steps.md)
+  - [Architecturing systems](./Distributed_Systems/Basic_premise/System_architecture_basics.md)
+
 
 # Ethical Hacking
 
