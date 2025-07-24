@@ -22,5 +22,10 @@ body {
     }
 ```
 
-In this case we want to modify the body element and we want the background color to be plum color and that stand alone property called color modifies the text color of the element
-and we change that to black.
+In this case we want to modify the body element and we want the background color to be plum color and that stand alone property called color modifies the text color of the element and we change that to black.
+
+But CSS not only let's us select elements by type of element it can modify elements by class, ID and even handle inheritance in some weird css way and not only that it lets us group the styling so that we don't have to repeat code.
+
+In the [repository of presentations for the class](https://github.com/Robinthatdoesnotsuck/ClassPresentations) under the second week branch you can observe different style selector for css in action.
+
+

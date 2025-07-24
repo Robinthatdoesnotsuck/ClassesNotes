@@ -79,3 +79,17 @@ This is an element that gives us access to embed web pages inside a web page, th
 If you think you page will behave the same for each type of screen, oh man you are wrong and a little bit silly, one of the most important things we have to handle cause if you change just the windows size in your computer you will apreciate that your page looks like utter horseradish, but there are easier modern ways to handle and personally I don't know how to add responsiveness with just plain HTML.
 
 ## Inputs and handling forms
+
+Input elements are well a way that HTML gives us to handle data input:
+
+- It can be buttons, text, radio buttons, checkboxes, etc.
+- But the after logic of a submit button is handled by whatever we have programmed in the backend of our web page
+
+And here comes more complicated stuff for handling the submition of data with something called http requests:
+
+### HTTP requests
+
+HYPER TEXT TRANSFER PROTOCOL it is a protocol that uses TCP to transfer well HTML resources, this protocol is the basis of mostly all communication on the web between services.
+It is a high level protocol, this means that we only have to make a petition to whatever entity that gives us the power to do an HTTP petition and we don't have to worry about the intermediate parts between ourselves and the server that we are making the petition to.
+
+This protocol has something called HTTP VERBS this is what we use to differentiate what type of request we are making, BUT we will see this methods in more detail in the future.
