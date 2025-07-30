@@ -28,4 +28,35 @@ But CSS not only let's us select elements by type of element it can modify eleme
 
 In the [repository of presentations for the class](https://github.com/Robinthatdoesnotsuck/ClassPresentations) under the second week branch you can observe different style selector for css in action.
 
+## Selectors
 
+Selectors are the way we specify what elements we want to style and they come in different in different flavors, mostly regarding the scope of the styling we want to apply
+
+### Basic selectors
+
+- By ID:
+  - We can select them by refering to an ID like this
+  
+  ```css
+  #some_id {
+    font-family: Consolas,monaco,monospace;
+  }
+  ```
+
+- By Class
+  - We make the reference to a class with
+
+  ```css
+  .some_class {
+    font-family: Consolas,monaco,monospace;
+  }
+  ```
+
+- By Element
+  - This will affect every element of that type
+
+  ```css
+  b {
+    font-family: Consolas,monaco,monospace;
+  }
+  ```

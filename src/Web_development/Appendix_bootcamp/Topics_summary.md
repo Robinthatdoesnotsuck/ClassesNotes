@@ -2,6 +2,5 @@
 
 Most of it will revolve around on how to use:
 
-- Containers (Docker containers)
-- Adminstrating these containers
-- Basic linux administration
+- Containers (Docker containers).
+- Basic linux administration.
