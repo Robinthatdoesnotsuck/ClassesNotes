@@ -8,7 +8,7 @@ But what we will be learning in this class is not that old school computing with
 
 Most of it comes as a system architecture necessity, what do I mean by that? well that shit was getting hard and I don't mean it like shit got hard in one specific area I mean it as everything regarding computer systems was getting really hard to get done across the growing IT and web boom.
 
-![strawberry](https://scontent.fmex32-1.fna.fbcdn.net/v/t39.30808-6/490470375_1083809920430636_3503122141523932049_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHVQTeqm068ipeLIjiCl9UzbCMlq-mE2O1sIyWr6YTY7UsahaDTfwoDixc7F7f8-lkWGFscHs1B6wLdz_lumUR5&_nc_ohc=bsReUcJyQOwQ7kNvwGy1BD0&_nc_oc=AdnD5uTiu0vFfI_1QJSfNYdgclZ_uZhCroGVQuyrtt2iW_9WBXtuz-IBxn7bUx_AEsxXWCs_l_jQUMktYRy9SF8_&_nc_zt=23&_nc_ht=scontent.fmex32-1.fna&_nc_gid=Niz7VV1fwhcx1bQczrWCGA&oh=00_AfTxejRgOucRvVgrkapqwoYiDnwNBkQEqpojjCmZPvh8Vw&oe=689096A7)}
+![strawberry](https://scontent.fmex32-1.fna.fbcdn.net/v/t39.30808-6/490470375_1083809920430636_3503122141523932049_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHVQTeqm068ipeLIjiCl9UzbCMlq-mE2O1sIyWr6YTY7UsahaDTfwoDixc7F7f8-lkWGFscHs1B6wLdz_lumUR5&_nc_ohc=bsReUcJyQOwQ7kNvwGy1BD0&_nc_oc=AdnD5uTiu0vFfI_1QJSfNYdgclZ_uZhCroGVQuyrtt2iW_9WBXtuz-IBxn7bUx_AEsxXWCs_l_jQUMktYRy9SF8_&_nc_zt=23&_nc_ht=scontent.fmex32-1.fna&_nc_gid=Niz7VV1fwhcx1bQczrWCGA&oh=00_AfTxejRgOucRvVgrkapqwoYiDnwNBkQEqpojjCmZPvh8Vw&oe=689096A7)
 
 ## Necesities of dividing and conquering
 
@@ -24,4 +24,19 @@ With those advantages we have to understand something first:
 
 MICROSERVICES IS THE LOGICAL NEXT STEP OF THE ARCHITECTURE -> I use all caps cause we don't start an app with microservices we usually decompose a monolith into microservices or we just add microservices to an already microservice architecture.
 
-WHY? cause as everything regarding computers, nothing is an all fit solution and everything has compromises
+WHY? cause as everything regarding computers, nothing is an all fit solution and everything has compromises as:
+
+- A monolith is hard to debug not because of the complex structure, it is hard to debug cause building and debugging might be time consuming, but in microservices debuging involves integration testing or finding the bug might be the most time consuming task since everything is decouple and all over the place, you have to read logs, retry errors and failing to do so cause a specific path of the microservices was the one that failed.
+- It is costly, since a lot of the architecture involves on demand load some spikes on hardware usage or services usage make microservices not that cost effective as a monolith
+- Consistency and divergence, since we are deploying decoupled services some of them could differ in library versions, language versions, scattered data or different data formats or even programming languages.
+- Overengineering -> this is one of the most common problems in microservices, cuase we might be doing to much on our solution and we might not need(yet) microservices.
+
+## ![gopher journey](https://github.com/egonelbre/gophers/raw/master/.thumb/vector/adventure/hiking.png) Why Go you sick bastard?
+
+Go was created for this -> quite literally, go was created to tackle the problems of a google in the desperate need to solve its scalability problems.
+
+Go in its standard package has enough power to deal with the modern concurrency, multithreading, networking and scaling problems that arise from needing a microservice architecture.
+
+Why don't we use other language?:
+
+- Because most problems now in day have a tool to solve it cause even though personally I really like programming C++ but I would be insane if I think to use it to build an entire app that relies on interactions with web services, databases, communication between cloud services, etc.
