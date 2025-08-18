@@ -39,4 +39,26 @@ Go in its standard package has enough power to deal with the modern concurrency,
 
 Why don't we use other language?:
 
-- Because most problems now in day have a tool to solve it cause even though personally I really like programming C++ but I would be insane if I think to use it to build an entire app that relies on interactions with web services, databases, communication between cloud services, etc.
+- Because most problems now in day have a tool to solve it cause even though personally I really like programming on C++ but I would be insane if I think to use it to build an entire app that relies on interactions with web services, databases, communication between cloud services, etc.
+- It is a language born to solve this, literally we could program the final project with only the standard library.
+- It is easy to program, easy to build/compile, easy to deploy and easy to learn.
+
+So with this knowledge we can start building stuff or something.
+
+## Lets talk about system design
+
+![neither do i](https://c.tenor.com/JFhbBE5yn_IAAAAC/tenor.gif)
+
+First things first, let us think about an app we might want to build.
+
+I want to copy letterbox cause I got no imagination, for this we need at least two parts:
+
+- The movie data and its operations
+- A rating system for well reviewing movies and stuff
+
+BUT here it comes a fundamental question now that we kinda know what to build, how does that data looks?
+Well there is something more important than the looks and that is the how the data behaves, cause the thing here is we are programming an app we are not just storing data into a massive data lake or a warehouse or whatever you use to save static data we have dinamyc data,
+This means that we are modifying that data, deleting it, inserting new data that is been inputted by a user, etc.
+
+And I use this example cause it fits into what most of times we need as programmers to divide something into a goddamn microservice, different behviour in data.
+
