@@ -29,6 +29,31 @@ Most of our interactions with the runtime is with the client aka the command lin
   - Then builds the docker image pulled
   - Finally it runs whatever command or program was specified in the image
 
+### Let us learn about docker cli
+
+When we install docker we have access to the docker client cli, a way for us to communicate with the docker daemon that is running in our computer.
+
+But what do we do usually as engineers with docker to well run a container:
+
+- First we pull an image from the remote docker repository ``docker pull image:version``
+- Second we run that image ``docker run image:version``
+
+We could also use ``docker ps`` to check what containers are running on our computer or we can use ``docker images`` to check the images we have available to run on our computer
+
+How do we interact with the container?
+
+We can use a variety of flags with our run command like:
+
+``docker run/exec -it image:version command`` This runs a cantainer with interactive mode ``i``attaching it to a tty ``t`` to see the output of a command you can use ``sh`` to try using the shell that lives inside the container
+
+If we have a rouge container running we can use ``docker stop image`` to stop it first before eliminating
+
+Then we can kill the build contianer with ``docker kill container``
+
+We can check how much resources our containers are using with ``docker system``
+
+And to wipe the image from the system we use ``docker rmi image``
+
 ## Dockerfiles
 
 Docker lets us declare the image configuration and execution with something called Dockerfiles.
@@ -65,3 +90,4 @@ To build we have to use this command
 And at last when everything has been built, we have to run our docker image to have a fully developed docker container and for that we use this
 
 - ``docker run -p 5000:5000 flask_app:1.0`` This command makes our image run, the command that runs is the one specified at the end of the dockerfile, in this case we have as entrypoint the command of ``flask run`` to run our flask app previously built.
+  - The ``-p 5000:5000`` help us in mapping the port of the container with a port of our systems since it is a decoupled system from our host
