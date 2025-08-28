@@ -60,3 +60,8 @@ Selectors are the way we specify what elements we want to style and they come in
     font-family: Consolas,monaco,monospace;
   }
   ```
+
+## The hardest (in my opinion) part of css
+
+Let us talk about positioning an element where want to on the page, like how do we do that?
+Css lets us manage well everything regarding style on the html elements
