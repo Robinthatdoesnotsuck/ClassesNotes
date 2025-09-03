@@ -64,4 +64,19 @@ Selectors are the way we specify what elements we want to style and they come in
 ## The hardest (in my opinion) part of css
 
 Let us talk about positioning an element where want to on the page, like how do we do that?
-Css lets us manage well everything regarding style on the html elements
+Css lets us manage well everything regarding style on the html elements but the important thing is well, where in the layout will the element be?
+
+Css has many tools for this or that try to help us with it (I say try cause positioning gets kinda funky).
+
+The first thing we have to take into account is the cell area that an element occupies on the HTML layout, but how do we see that???
+
+We can go to any page, in this example let us open the inspector on our browser with F12 it shoul look something like this
+
+<img src="./assets/InspectorExample.png" alt="placeholder" width="100%" height="100%">
+
+Here we can explore the source code of our page and we can use the <img src="./assets/select_elment_icon.png" alt="placeholder" > to hover over the element we want to inspect.
+
+Once you hover over the element you will see something change in the layout sub-tab on the inspector, in that sub-tab we have some boxes that display data, the name of these boxes are Flexbox, Grid and the Box Model. What matters now is the Box Model so lets check it out and what does that weird boxes mean.
+
+First we have a yellow box, that determines the margin of the element <img src = "./assets/margin_box.png" width="50%" height="50%">
+that is the distance or the space around other elements
