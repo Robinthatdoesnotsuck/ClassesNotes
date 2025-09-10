@@ -137,7 +137,7 @@ This float property has 4 options:
 
 ## How to learn more of the CSS jargon
 
-
+Most of CSS is learned by doing and searching what you need since learning everything is impossible, like literally impossible there is too much and depending of the interactions between other elements some stuff might need tweaking.
 
 ## References
 
