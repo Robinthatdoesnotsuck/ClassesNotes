@@ -27,7 +27,14 @@
 - [Distributed Systems](./Distributed_Systems/First_steps.md)
   - [Architecturing systems](./Distributed_Systems/Basic_premise/System_architecture_basics.md)
     - [Creating a project for microservices](./Distributed_Systems/Basic_premise/Starting_out_microservices.md)
-    - [Somethin something]()
+  - [A little bit of Kubernetes](./Distributed_Systems/Getting_harder/Kubernetes_starting.md)
+    - [Basic management of kubernetes](./Distributed_Systems/Getting_harder/Basic_management.md)
+    - [Declaratively and imperatively](./Distributed_Systems/Getting_harder/Using_config_files.md)
+  - [Some of kubernetes](./Distributed_Systems/Already_hard/Into_the_deep.md)
+    - [Pods and containers](./Distributed_Systems/Already_hard/Configuring_pods.md)
+    - [Services and pods](./Distributed_Systems/Already_hard/Configuring_services.md)
+    - [Deployments and services](./Distributed_Systems/Already_hard/Configuring_deployments.md)
+    - [Getting all together](./Distributed_Systems/Already_hard/The_sum_of_all.md)
 
 # Ethical Hacking
 
