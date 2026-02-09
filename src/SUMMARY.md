@@ -5,6 +5,8 @@
 # Operating Systems
 
 - [Operating systems](./OperatingSystems/First_steps.md)
+  - [Starting the Unix Journey](./OperatingSystems/Starting/Starting_on_unix.md)
+    - [What does a good operating system do?](./OperatingSystems/Starting/Virtualize.md)
 
 # Web Development
 

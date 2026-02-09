@@ -6,13 +6,3 @@ title = "University-classes-notes"
 
 [output.html.playground]
 editable = true
-
-[preprocessor.repl]
-src = "https://mr-addict.github.io/mdbook-repl/embed/"
-# typescript is disabled by default and loading is lazy
-typescript.enable = true
-typescript.loading = "lazy"
-
-# javascript is disabled by default and loading is lazy
-javascript.enable = true
-javascript.loading = "lazy"
