@@ -7,6 +7,9 @@
 - [Operating systems](./OperatingSystems/First_steps.md)
   - [Starting the Unix Journey](./OperatingSystems/Starting/Starting_on_unix.md)
     - [What does a good operating system do?](./OperatingSystems/Starting/Virtualize.md)
+    - [Surviving concurrency and multithreading part 1](./OperatingSystems/Starting/Understanding.md)
+    - [Other basic commands and input/output operators](./OperatingSystems/Starting/Command_utils.md)
+    - [Surviving concurrency and multithreading part 2](./OperatingSystems/Starting/Still_Not_Understanding.md)
 
 # Web Development
 
