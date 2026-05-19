@@ -10,6 +10,21 @@
     - [Surviving concurrency and multithreading part 1](./OperatingSystems/Starting/Understanding.md)
     - [Other basic commands and input/output operators](./OperatingSystems/Starting/Command_utils.md)
     - [Surviving concurrency and multithreading part 2](./OperatingSystems/Starting/Still_Not_Understanding.md)
+  - [Administrating our Linux System](./OperatingSystems/SysAdmin/First_steps_on_linux.md)
+    - [How linux does things and the Linux kernel](./OperatingSystems/SysAdmin/How_linux_works_in_the_inside.md)
+    - [Starting our deep dive into actually using linux](./OperatingSystems/SysAdmin/What_is_linux.md)
+    - [Actually using linux](./OperatingSystems/SysAdmin/First_part_managing_linux_and_more_commands.md)
+    - [Using more linux, configuring it and what is bash with tty](./OperatingSystems/SysAdmin/Understanding_dot_files.md)
+    - [Networks basics with linux and some notes on vulnerabilities](./OperatingSystems/SysAdmin/Ew_Networks.md)
+    - [Using CMake and how to administer programming projects on linux](./OperatingSystems/SysAdmin/Managing_big_boy_cpp.md)
+    - [Containers and using docker](./OperatingSystems/SysAdmin/Starting_docker.md)
+    - [Configuring our images with Dockerfiles](./OperatingSystems/SysAdmin/Images_and_Dockerfiles.md)
+    - [Using docker to understand linux and our opearting system](./OperatingSystems/SysAdmin/Actually_using_docker.md)
+  - [Continue our linux journey](./OperatingSystems/AdvancingOnLinux/Intermediate_linux.md)
+    - [SSHing into ourselves](./OperatingSystems/AdvancingOnLinux/SSH_and_connecting.md)
+    - [Actually installing linux](./OperatingSystems/AdvancingOnLinux/Understanding_how_linux_is_installed.md)
+    - [Filesystem and filesystems](./OperatingSystems/AdvancingOnLinux/How_does_an_os_saves_data.md)
+    - [Interprocess communication and how computers communicate](./OperatingSystems/AdvancingOnLinux/Process_comms.md)
 
 # Web Development
 

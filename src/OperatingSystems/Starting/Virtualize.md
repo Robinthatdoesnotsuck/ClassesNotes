@@ -39,3 +39,9 @@ int main() {
 ```
 
 At creation the program starts at the Ready state, meaning that the program can execute but it is waiting for the OS to decide on this. Then the OS will give it time to execute this is the Running state, this means that the program is running its instructions inside the CPU, then it might do some action that interrupts it like writing to a file, printing something to the standard I/O this state is what we call Blocked after doing any operation that is dependant on another event it will enter the ready state and so on so on the state changes continue. This is the basic way a program behaves inside OS.
+
+This state block changes depending on the usage of the CPU by the program as the OS asigns its usage so that the actual program does work that well it was programmed to:
+
+-- Put diagram of processes
+
+So a program is either paused, doing something or ready to do something and the program just transitions between states when doing work and it ends either when a process finishes by an error, by acutally finishing its work or either by a parent program finishing or killing the program.
