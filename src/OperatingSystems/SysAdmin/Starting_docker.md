@@ -35,5 +35,4 @@ Well for the reasons already pointed earlier, like what if we need a more comple
 
 ### Firsts steps
 
-Install docker desktop or just docker in your OS, it will give you a neat tidy UI to use and administer your containers
-
+Install docker desktop or just docker in your OS, it will give you a neat tidy UI to use and administer your containers so let us
