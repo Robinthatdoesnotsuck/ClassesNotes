@@ -46,6 +46,10 @@
 
 - [Distributed Systems](./Distributed_Systems/First_steps.md)
   - [Architecturing systems](./Distributed_Systems/Basic_premise/System_architecture_basics.md)
+    - [Programming Languages](./Distributed_Systems/Basic_premise/More_languages_more_problems.md)
+    - [Modeling distribution](./Distributed_Systems/Basic_premise/How_do_you_distribute_systems.md)
+    - [Diving into common system architectures](./Distributed_Systems/Basic_premise/Other_architecures_what_does_it_mean.md)
+    - [Trying out some design patterns](./Distributed_Systems/Basic_premise/Understanding_design_patterns.md)
     - [Creating a project for microservices](./Distributed_Systems/Basic_premise/Starting_out_microservices.md)
   - [A little bit of Kubernetes](./Distributed_Systems/Getting_harder/Kubernetes_starting.md)
     - [Basic management of kubernetes](./Distributed_Systems/Getting_harder/Basic_management.md)
