@@ -72,4 +72,10 @@ Then this gives another layer of complexity on how does data will behave, how do
 
 This thinking or this type of seeing the problems when it comes to the extra problems of architecting a system is what we call system design, let us just refer it now as an even more complex layer than just architecting systems.
 
-## So it is a distributed systems course or a microservices one or an architecture or what?
+## So it is a distributed systems course or a microservices one or an architecture one or what?
+
+yes, you see distributed systems relates to system architecture and to system design and then to microservices, but what do I mean by that?
+
+Well what I mean is that the distributed systems pipeline will show us the way of system architecture and that will lead us to system design, but how do we practice/learn that, by using something that kinda uses everything all at once.
+
+We will create a system/app with microservice architecture, but first we need to explain how everything works.
